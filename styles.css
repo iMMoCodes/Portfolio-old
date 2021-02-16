@@ -332,10 +332,12 @@ body {
   background: linear-gradient(to right top, #65dfc9, #6cdbeb);
 }
 
+/* GLASS */
 .glass {
+  display: flex;
   background: white;
   min-height: 70vh;
-  width: 60%;
+  width: 70%;
   background: linear-gradient(
     to right bottom,
     rgba(255, 255, 255, 0.7),
@@ -346,6 +348,92 @@ body {
   backdrop-filter: blur(2rem);
 }
 
+/* GLASS LEFT */
+.left-about {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.user {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.user-img {
+  margin: 0 20px;
+}
+
+.user-name {
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.web-dev {
+  text-align: center;
+}
+
+.languages {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  min-height: 40%;
+}
+
+.language {
+  display: flex;
+  flex-direction: column;
+}
+
+.language-img {
+  padding: 10px;
+  max-height: 100px;
+}
+.language-title {
+  text-align: center;
+}
+
+/* GLASS RIGHT */
+.right-about {
+  flex: 1;
+}
+
+.about-area {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  min-height: 60%;
+}
+
+.about-text {
+  text-align: center;
+}
+
+.about-title {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.currently-training {
+  display: flex;
+  justify-content: space-around;
+}
+
+.training-title {
+  text-align: center;
+}
+
+.study-text {
+  text-align: center;
+}
+
+@media screen and (max-width: 912px) {
+  .language-img {
+    max-height: 60px;
+  }
+}
+/* BUBBLES */
 .circle1,
 .circle2 {
   background: white;
