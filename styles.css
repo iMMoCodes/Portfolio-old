@@ -34,7 +34,7 @@ body {
 }
 
 .nav div.logo a:hover {
-  color: #66fcf1;
+  color: black;
 }
 
 .nav div.nav-list {
@@ -66,7 +66,7 @@ body {
 }
 
 .nav div.nav-list ul li a:hover {
-  color: #66fcf1;
+  color: black;
 }
 
 .navTrigger {
@@ -475,4 +475,74 @@ body {
 .circle2 {
   bottom: 5%;
   left: 10%;
+}
+
+/* PROJECTS */
+
+.projects-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(to left top, #6cdbeb, #65dfc9);
+}
+
+.projects-container {
+  transform-style: preserve-3d;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background: white;
+  min-height: 70vh;
+  width: 70vw;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.3)
+  );
+  border-radius: 2rem;
+  z-index: 2;
+  backdrop-filter: blur(2rem);
+}
+
+.projects-title {
+  font-size: 2rem;
+}
+.project-picture {
+  margin-top: -100px;
+}
+
+.project-stack {
+  margin-top: -100px;
+  display: flex;
+  justify-content: space-around;
+  width: 40%;
+}
+
+.project-stack-img {
+  width: 40px;
+}
+
+.project-name {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.project-description {
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.projects-choice {
+  display: flex;
+  justify-content: space-around;
+}
+
+.project-choice {
+  height: 100px;
+  width: 100px;
+  font-size: 1.4rem;
+  border-radius: 50%;
+  border: none;
 }
