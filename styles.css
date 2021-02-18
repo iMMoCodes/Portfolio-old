@@ -561,6 +561,10 @@ body {
   backdrop-filter: blur(2rem);
 }
 
+.project-info {
+  min-width: 60%;
+}
+
 .projects-title {
   transition: all 0.75s ease-out;
   background: radial-gradient(
