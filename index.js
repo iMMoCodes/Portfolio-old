@@ -65,19 +65,38 @@ projectContainer.addEventListener("mouseleave", (e) => {
 });
 
 // Switch Projects
+
 const projectOneChange = () => {
    projectName.innerHTML = PROJECT_ONE_TITLE;
    projectDescription.innerHTML = PROJECT_ONE_DESC;
-}
+   projectImg.setAttribute("src","./assets/HTML.svg");
+   if(projectTwoBtn.classList.contains("active-choice") || projectThreeBtn.classList.contains("active-choice")) {
+      projectOneBtn.classList.add("active-choice");
+      projectTwoBtn.classList.remove("active-choice");
+      projectThreeBtn.classList.remove("active-choice");
+   };
+   }
 
 const projectTwoChange = () => {
    projectName.innerHTML = PROJECT_TWO_TITLE;
    projectDescription.innerHTML = PROJECT_TWO_DESC;
+   projectImg.setAttribute("src","./assets/CSS.svg");
+   if(projectOneBtn.classList.contains("active-choice") || projectThreeBtn.classList.contains("active-choice")) {
+      projectTwoBtn.classList.add("active-choice");
+      projectOneBtn.classList.remove("active-choice");
+      projectThreeBtn.classList.remove("active-choice");
+   };
 }
 
 const projectThreeChange = () => {
    projectName.innerHTML = PROJECT_THREE_TITLE;
    projectDescription.innerHTML = PROJECT_THREE_DESC;
+   projectImg.setAttribute("src","./assets/JS.svg");
+   if(projectOneBtn.classList.contains("active-choice") || projectTwoBtn.classList.contains("active-choice")) {
+      projectThreeBtn.classList.add("active-choice");
+      projectOneBtn.classList.remove("active-choice");
+      projectTwoBtn.classList.remove("active-choice");
+   };
 }
 
 projectOneBtn.addEventListener("click",projectOneChange);

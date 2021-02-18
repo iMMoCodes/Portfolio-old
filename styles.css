@@ -643,3 +643,17 @@ body {
     rgba(108, 219, 235, 0.8) 100%
   );
 }
+
+.codeBtnLink,
+.viewBtnLink {
+  text-decoration: none;
+  color: black;
+}
+
+.active-choice {
+  background: radial-gradient(
+    circle,
+    rgba(101, 223, 201, 0.3) 0%,
+    rgba(108, 219, 235, 0.8) 100%
+  );
+}

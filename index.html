@@ -21,8 +21,8 @@
          <div id="navList" class="nav-list">
             <ul class="navlinks">
                <li><a href="#">Home</a></li>
-               <li><a href="#">About</a></li>
-               <li><a href="#">Projects</a></li>
+               <li><a href="#about-sect">About</a></li>
+               <li><a href="#projects-sect">Projects</a></li>
                <li><a href="#">Contact</a></li>
             </ul>
          </div>
@@ -35,7 +35,7 @@
    </nav>
    <!-- END OF NAVBAR -->
    <!-- MAIN -->
-   <main class="home">
+   <main id="about-sect" class="home">
          <section class="glass">
             <div class="left-about">
                <div class="user">
@@ -84,7 +84,7 @@
    </main>
          <!-- PROJECTS -->
    <main>
-      <section class="projects-section">
+      <section id="projects-sect" class="projects-section">
          <div class="projects-container">
                <h1 class="projects-title">My Projects</h1>
                <div class="project-picture">
@@ -99,13 +99,14 @@
                   <h1 class="project-name">Recipe Search</h1>
                   <h3 class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, dicta.</h3>
                   <div class="projects-choice">
-                     <button id="projectOne" class="project-choice">Project #1</button>
+                     <button id="projectOne" class="project-choice active-choice">Project #1</button>
                      <button id="projectTwo" class="project-choice">Project #2</button>
                      <button id="projectThree" class="project-choice">Project #3</button>
                   </div>
                   <div class="project-view">
-                     <button id="viewBtn" class="code-button">View Live</button>
-                     <button id="codeBtn" class="code-button">See Code</button>
+                     <button id="viewBtn" class="code-button"><a class="viewBtnLink" href="https://github.com/iMMoCodes/Recipe-search/tree/main/recipe-app" target="_blank"
+                        alt="Github">View Live</a></button>
+                     <button id="codeBtn" class="code-button"><a class="codeBtnLink" href="https://github.com/iMMoCodes/Recipe-search/tree/main/recipe-app" target="_blank" alt="Github">See Code</a></button>
                   </div>
                </div>
             </div>
