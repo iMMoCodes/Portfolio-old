@@ -336,7 +336,7 @@ body {
 .glass {
   display: flex;
   background: white;
-  min-height: 70vh;
+  min-height: 80vh;
   width: 70%;
   background: linear-gradient(
     to right bottom,
@@ -366,14 +366,31 @@ body {
 .user-name {
   font-size: 2rem;
   text-align: center;
+  background: radial-gradient(
+    circle,
+    rgba(101, 223, 201, 0.3) 0%,
+    rgba(108, 219, 235, 0.8) 100%
+  );
+  border-radius: 2rem;
+  padding: 10px;
+  margin-top: 10px;
+  text-shadow: 2px 2px #26a1a1;
 }
 
 .web-dev {
   font-size: 1.5rem;
   text-align: center;
+  background: radial-gradient(
+    circle,
+    rgba(101, 223, 201, 0.3) 0%,
+    rgba(108, 219, 235, 0.8) 100%
+  );
+  border-radius: 2rem;
+  text-shadow: 1px 1px #26a1a1;
 }
 
 .languages {
+  margin-left: 20px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -392,6 +409,13 @@ body {
 .language-title {
   font-size: 1.4rem;
   text-align: center;
+  background: radial-gradient(
+    circle,
+    rgba(101, 223, 201, 0.3) 0%,
+    rgba(108, 219, 235, 0.8) 100%
+  );
+  border-radius: 2rem;
+  text-shadow: 1px 1px #26a1a1;
 }
 
 /* GLASS RIGHT */
@@ -408,33 +432,61 @@ body {
 }
 
 .about-texts {
-  padding: 1.5rem;
+  background: radial-gradient(
+    circle,
+    rgba(101, 223, 201, 0.3) 0%,
+    rgba(108, 219, 235, 0.8) 100%
+  );
+  border-radius: 2rem;
+  padding: 0.3rem;
+  margin-top: 30px;
 }
 
 .about-text {
   text-align: center;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
+  text-shadow: 1px 1px #26a1a1;
 }
 
 .about-title {
+  margin: 10px auto;
   font-size: 2rem;
   text-align: center;
-  margin-top: 1%;
+  padding: 10px;
+  background: radial-gradient(
+    circle,
+    rgba(101, 223, 201, 0.3) 0%,
+    rgba(108, 219, 235, 0.8) 100%
+  );
+  border-radius: 2rem;
+  text-shadow: 2px 2px #26a1a1;
 }
 
 .currently-training {
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
 }
 
 .training-title {
   text-align: center;
+  font-size: 1.4rem;
+  background: radial-gradient(
+    circle,
+    rgba(101, 223, 201, 0.3) 0%,
+    rgba(108, 219, 235, 0.8) 100%
+  );
+  border-radius: 2rem;
+  text-shadow: 1px 1px #26a1a1;
+  margin-top: 10px;
+  padding: 10px;
 }
 
 .study-text {
   text-align: center;
+  text-shadow: 1px 1px #26a1a1;
 }
-
+/* MEDIA QUERY FOR TEXT SIZE */
 @media screen and (max-width: 912px) {
   .language-img {
     max-height: 60px;
@@ -449,6 +501,9 @@ body {
     font-size: 0.8rem;
   }
   .language-title {
+    font-size: 1rem;
+  }
+  .training-title {
     font-size: 1rem;
   }
 }
@@ -494,7 +549,7 @@ body {
   justify-content: space-around;
   align-items: center;
   background: white;
-  min-height: 70vh;
+  min-height: 90vh;
   width: 70vw;
   background: linear-gradient(
     to right bottom,
@@ -509,12 +564,8 @@ body {
 .projects-title {
   font-size: 2rem;
 }
-.project-picture {
-  margin-top: -100px;
-}
 
 .project-stack {
-  margin-top: -100px;
   display: flex;
   justify-content: space-around;
   width: 40%;
@@ -537,12 +588,32 @@ body {
 .projects-choice {
   display: flex;
   justify-content: space-around;
+  margin-top: 10px;
 }
 
-.project-choice {
+.project-choice,
+.code-button {
   height: 100px;
   width: 100px;
   font-size: 1.4rem;
   border-radius: 50%;
   border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.project-view {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+}
+
+.project-choice:hover,
+.code-button:hover {
+  background: radial-gradient(
+    circle,
+    rgba(101, 223, 201, 0.3) 0%,
+    rgba(108, 219, 235, 0.8) 100%
+  );
 }
