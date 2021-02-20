@@ -9,6 +9,14 @@ const PROJECT_ONE_DESC = "First one"
 const PROJECT_TWO_DESC = "Second one"
 const PROJECT_THREE_DESC = "Third one"
 
+const PROJECT_ONE_URL = "https://github.com/iMMoCodes/Recipe-search";
+const PROJECT_TWO_URL = "https://github.com/iMMoCodes/Shopping-Cart";
+const PROJECT_THREE_URL = "https://github.com/iMMoCodes/Tic-Tac-Toe";
+
+const PROJECT_ONE_LIVE_URL = "https://my-recipe-search-app-live.netlify.app/";
+const PROJECT_TWO_LIVE_URL = "https://my-shopping-cart-app.netlify.app/";
+const PROJECT_THREE_LIVE_URL = "https://my-tac-tic-toc-game.netlify.app/";
+
 // Project Variables
 const projectSection = document.querySelector(".projects-section");
 const projectContainer = document.querySelector(".projects-container");
@@ -24,8 +32,8 @@ const projectBtns = document.querySelectorAll(".project-choice");
 const projectOneBtn = document.querySelector("#projectOne");
 const projectTwoBtn = document.querySelector("#projectTwo");
 const projectThreeBtn = document.querySelector("#projectThree");
-const viewBtn = document.querySelector("#viewBtn");
-const codeBtn = document.querySelector("#codeBtn");
+const viewBtn = document.querySelector(".viewBtnLink");
+const codeBtn = document.querySelector(".codeBtnLink");
 
 
 // Moving Animation
@@ -38,7 +46,7 @@ projectContainer.addEventListener("mousemove", (e) => {
 // Animate In
 projectContainer.addEventListener("mouseenter", (e) => {
    projectContainer.style.transition = "none";
-   //Popout
+   // Popout
    projectTitle.style.transform ="translateZ(150px)";
    projectStackImgs.forEach(stackImg => {
    stackImg.style.transform ="translateZ(200px)";
@@ -54,7 +62,7 @@ projectContainer.addEventListener("mouseenter", (e) => {
 projectContainer.addEventListener("mouseleave", (e) => {
    projectContainer.style.transition = "all 1.0s ease";
    projectContainer.style.transform = `rotateY(0deg) rotateX(0deg)`;
-   //Popback
+   // Popback
    projectTitle.style.transform ="translateZ(0px)";
    projectStackImgs.forEach(stackImg => {
    stackImg.style.transform ="translateZ(0px) rotateZ(0deg)";
@@ -74,16 +82,21 @@ const projectOneChange = () => {
    projectDescription.innerHTML = PROJECT_ONE_DESC;
    // Project Image
    projectImg.setAttribute("src","./assets/recipe-search.png");
-   //Project Stack
+   // Project Stack
    projectStackOne.setAttribute("src","./assets/CSS.svg");
    projectStackTwo.setAttribute("src","./assets/JS.svg");
    projectStackThree.setAttribute("src","./assets/React.svg");
-   //Staying Background Color
+   // Staying Background Color
    if(projectTwoBtn.classList.contains("active-choice") || projectThreeBtn.classList.contains("active-choice")) {
       projectOneBtn.classList.add("active-choice");
       projectTwoBtn.classList.remove("active-choice");
       projectThreeBtn.classList.remove("active-choice");
+      // Href To Code Button
+      codeBtn.setAttribute("href",PROJECT_ONE_URL);
+      // Href To Live Button
+      viewBtn.setAttribute("href",PROJECT_ONE_LIVE_URL);
    };
+   //
    }
 
 const projectTwoChange = () => {
@@ -97,6 +110,8 @@ const projectTwoChange = () => {
       projectTwoBtn.classList.add("active-choice");
       projectOneBtn.classList.remove("active-choice");
       projectThreeBtn.classList.remove("active-choice");
+      codeBtn.setAttribute("href",PROJECT_TWO_URL);
+      viewBtn.setAttribute("href",PROJECT_TWO_LIVE_URL);
    };
 }
 
@@ -111,6 +126,8 @@ const projectThreeChange = () => {
       projectThreeBtn.classList.add("active-choice");
       projectOneBtn.classList.remove("active-choice");
       projectTwoBtn.classList.remove("active-choice");
+      codeBtn.setAttribute("href",PROJECT_THREE_URL);
+      viewBtn.setAttribute("href",PROJECT_THREE_LIVE_URL);
    };
 }
 

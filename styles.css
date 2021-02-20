@@ -509,7 +509,9 @@ body {
 }
 /* BUBBLES */
 .circle1,
-.circle2 {
+.circle2,
+.circle3,
+.circle4 {
   background: white;
   background: linear-gradient(
     to right bottom,
@@ -529,6 +531,15 @@ body {
 
 .circle2 {
   bottom: 5%;
+  left: 10%;
+}
+
+.circle3 {
+  bottom: -80%;
+  right: 10%;
+}
+.circle4 {
+  bottom: -50%;
   left: 10%;
 }
 
@@ -582,6 +593,15 @@ body {
   display: flex;
   justify-content: space-around;
   width: 40%;
+}
+
+.stack-background {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70px;
+  background: #26a1a1;
+  border-radius: 50%;
 }
 
 .project-stack-img {
