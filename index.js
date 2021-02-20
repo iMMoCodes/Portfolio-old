@@ -2,7 +2,7 @@
 
 // Constants
 const PROJECT_ONE_TITLE = "Recipe Search";
-const PROJECT_TWO_TITLE = "Shopping Site";
+const PROJECT_TWO_TITLE = "Shopping Cart";
 const PROJECT_THREE_TITLE = "Tic Tac Toe";
 
 const PROJECT_ONE_DESC = "First one"
@@ -15,6 +15,9 @@ const projectContainer = document.querySelector(".projects-container");
 const projectTitle = document.querySelector(".projects-title");
 const projectImg = document.querySelector(".project-img");
 const projectStackImgs = document.querySelectorAll(".project-stack-img");
+const projectStackOne = document.querySelector("#stack-one");
+const projectStackTwo = document.querySelector("#stack-two");
+const projectStackThree = document.querySelector("#stack-three");
 const projectName = document.querySelector(".project-name");
 const projectDescription = document.querySelector(".project-description");
 const projectBtns = document.querySelectorAll(".project-choice");
@@ -27,8 +30,8 @@ const codeBtn = document.querySelector("#codeBtn");
 
 // Moving Animation
 projectContainer.addEventListener("mousemove", (e) => {
-   let xAxis = (window.innerWidth / 2 - e.pageX) / 75;
-   let yAxis = (window.innerHeight / 2 - e.pageY) / 75;
+   let xAxis = (window.innerWidth / 2 - e.pageX) / 100;
+   let yAxis = (window.innerHeight / 2 - e.pageY) / 100;
    projectContainer.style.transform = `rotateY(${xAxis}deg) rotateX(${yAxis}deg)`
 });
 
@@ -69,7 +72,13 @@ projectContainer.addEventListener("mouseleave", (e) => {
 const projectOneChange = () => {
    projectName.innerHTML = PROJECT_ONE_TITLE;
    projectDescription.innerHTML = PROJECT_ONE_DESC;
-   projectImg.setAttribute("src","./assets/HTML.svg");
+   // Project Image
+   projectImg.setAttribute("src","./assets/recipe-search.png");
+   //Project Stack
+   projectStackOne.setAttribute("src","./assets/CSS.svg");
+   projectStackTwo.setAttribute("src","./assets/JS.svg");
+   projectStackThree.setAttribute("src","./assets/React.svg");
+   //Staying Background Color
    if(projectTwoBtn.classList.contains("active-choice") || projectThreeBtn.classList.contains("active-choice")) {
       projectOneBtn.classList.add("active-choice");
       projectTwoBtn.classList.remove("active-choice");
@@ -80,7 +89,10 @@ const projectOneChange = () => {
 const projectTwoChange = () => {
    projectName.innerHTML = PROJECT_TWO_TITLE;
    projectDescription.innerHTML = PROJECT_TWO_DESC;
-   projectImg.setAttribute("src","./assets/CSS.svg");
+   projectImg.setAttribute("src","./assets/shopping-site.png");
+   projectStackOne.setAttribute("src","./assets/HTML.svg");
+   projectStackTwo.setAttribute("src","./assets/CSS.svg");
+   projectStackThree.setAttribute("src","./assets/JS.svg");
    if(projectOneBtn.classList.contains("active-choice") || projectThreeBtn.classList.contains("active-choice")) {
       projectTwoBtn.classList.add("active-choice");
       projectOneBtn.classList.remove("active-choice");
@@ -91,13 +103,17 @@ const projectTwoChange = () => {
 const projectThreeChange = () => {
    projectName.innerHTML = PROJECT_THREE_TITLE;
    projectDescription.innerHTML = PROJECT_THREE_DESC;
-   projectImg.setAttribute("src","./assets/JS.svg");
+   projectImg.setAttribute("src","./assets/tic-tac-toe.png");
+   projectStackOne.setAttribute("src","./assets/HTML.svg");
+   projectStackTwo.setAttribute("src","./assets/CSS.svg");
+   projectStackThree.setAttribute("src","./assets/JS.svg");
    if(projectOneBtn.classList.contains("active-choice") || projectTwoBtn.classList.contains("active-choice")) {
       projectThreeBtn.classList.add("active-choice");
       projectOneBtn.classList.remove("active-choice");
       projectTwoBtn.classList.remove("active-choice");
    };
 }
+
 
 projectOneBtn.addEventListener("click",projectOneChange);
 projectTwoBtn.addEventListener("click",projectTwoChange);
