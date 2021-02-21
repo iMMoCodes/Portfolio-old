@@ -769,6 +769,7 @@ body {
   padding: 1rem;
   border-radius: 50px;
   margin-top: 20px;
+  width: 100%;
 }
 
 .contact-message textarea {
