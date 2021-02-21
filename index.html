@@ -25,7 +25,7 @@
                <li><a href="#">Home</a></li>
                <li><a href="#about-sect">About</a></li>
                <li><a href="#projects-sect">Projects</a></li>
-               <li><a href="#">Contact</a></li>
+               <li><a href="#contact-sect">Contact</a></li>
             </ul>
          </div>
          <span class="navTrigger">
@@ -83,6 +83,8 @@
                </div>
             </div>
          </section>
+               <div class="circle1"></div>
+               <div class="circle2"></div>
    </main>
          <!-- PROJECTS -->
    <main>
@@ -105,15 +107,15 @@
                </div>
                <div class="project-info">
                   <h1 class="project-name">Recipe Search</h1>
-                  <h3 class="project-description">FIX THIS</h3>
+                  <h3 class="project-description">Have you ever felt hungry? You can now fetch ingredients for your favorite foods</h3>
                   <div class="projects-choice">
-                     <button id="projectOne" class="project-choice active-choice">Project #1</button>
-                     <button id="projectTwo" class="project-choice">Project #2</button>
-                     <button id="projectThree" class="project-choice">Project #3</button>
+                     <button id="projectOne" class="project-choice active-choice">Recipe App</button>
+                     <button id="projectTwo" class="project-choice">Shopping Cart</button>
+                     <button id="projectThree" class="project-choice">Tic Tac Toe</button>
                   </div>
                   <div class="project-view">
                      <a class="viewBtnLink" href="https://my-recipe-search-app-live.netlify.app/" target="_blank" alt="Github">
-                        <button id="viewBtn" class="code-button">View Live</button>
+                        <button id="viewBtn" class="code-button">Try Yourself</button>
                      </a>
                      <a class="codeBtnLink" href="https://github.com/iMMoCodes/Recipe-search" target="_blank" alt="Github">
                         <button id="codeBtn" class="code-button">See Code</button>
@@ -125,8 +127,35 @@
             <div class="circle4"></div>
          </section>
       </main>
-      <div class="circle1"></div>
-      <div class="circle2"></div>
+      <!-- CONTACT -->
+      <main>
+         <section id="contact-sect" class="contact-section">
+            <div class="contact-container">
+               <h1 class="contact-title">Contact Me</h1>
+               <!-- FORM -->
+               <form action="POST" data-netlify="true">
+                  <div class="contact-fields">
+                     <div class="contact-field">
+                        <input type="text" name="name" id="name" placeholder="Name" />
+                     </div>
+                     <div class="contact-field">
+                        <input type="email" name="email" id="email" placeholder="Email" />
+                     </div>
+                     <div class="contact-message">
+                        <textarea name="message" id="message" placeholder="Message" rows="7"></textarea>
+                     </div>
+                     <div data-netlify-recaptcha="true"></div>
+                  </div>
+                  <ul class="actions">
+                     <li><input type="submit" value="Send" class="submit-btn" /></li>
+                  </ul>
+               </form>
+            </div>
+         </section>
+         <div class="circle5"></div>
+         <div class="circle6"></div>
+         <div class="circle7"></div>
+      </main>
    <script src="index.js"></script>
 </body>
 </html>

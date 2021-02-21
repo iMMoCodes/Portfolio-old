@@ -5,9 +5,9 @@ const PROJECT_ONE_TITLE = "Recipe Search";
 const PROJECT_TWO_TITLE = "Shopping Cart";
 const PROJECT_THREE_TITLE = "Tic Tac Toe";
 
-const PROJECT_ONE_DESC = "First one"
-const PROJECT_TWO_DESC = "Second one"
-const PROJECT_THREE_DESC = "Third one"
+const PROJECT_ONE_DESC = "Have you ever felt hungry? You can now fetch your ingredients for your favorite foods";
+const PROJECT_TWO_DESC = "Shoppers paradise";
+const PROJECT_THREE_DESC = "Fun for two";
 
 const PROJECT_ONE_URL = "https://github.com/iMMoCodes/Recipe-search";
 const PROJECT_TWO_URL = "https://github.com/iMMoCodes/Shopping-Cart";
@@ -116,7 +116,7 @@ const projectTwoChange = () => {
 }
 
 const projectThreeChange = () => {
-   projectName.innerHTML = PROJECT_THREE_TITLE;
+   projectName.innerText = PROJECT_THREE_TITLE;
    projectDescription.innerHTML = PROJECT_THREE_DESC;
    projectImg.setAttribute("src","./assets/tic-tac-toe.png");
    projectStackOne.setAttribute("src","./assets/HTML.svg");
