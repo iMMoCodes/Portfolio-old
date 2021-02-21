@@ -155,17 +155,22 @@
                <!-- FORM -->
                <form method="POST" data-netlify="true" data-netlify-recaptcha="true">
                   <div class="contact-fields">
+                     <!-- CONTACT NAME -->
                      <div class="contact-field">
-                        <input type="text" name="name" id="name" placeholder="Name" />
+                        <input type="text" name="name" id="name" placeholder="Name..." />
                      </div>
+                     <!-- CONTACT EMAIL -->
                      <div class="contact-field">
-                        <input type="email" name="email" id="email" placeholder="Email" />
+                        <input type="email" name="email" id="email" placeholder="Email..." />
                      </div>
+                     <!-- CONTACT MESSAGE -->
                      <div class="contact-message">
-                        <textarea name="message" id="message" placeholder="Message" rows="7"></textarea>
+                        <textarea name="message" id="message" placeholder="Message..." rows="7"></textarea>
                      </div>
+                     <!-- RECAPTCHA -->
                      <div data-netlify-recaptcha="true"></div>
                   </div>
+                  <!-- CONTACT SUBMIT -->
                   <ul class="actions">
                      <li><input type="submit" value="Send" class="submit-btn" /></li>
                   </ul>
