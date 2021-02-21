@@ -798,4 +798,8 @@ ul {
   font-size: 2rem;
   padding: 1rem;
   margin-top: 20px;
+  cursor: pointer;
+}
+.submit-btn:hover {
+  background: #26a1a1;
 }
