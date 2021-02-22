@@ -1,3 +1,31 @@
+// NAVBAR
+
+// Navbar Variables
+const nav = document.querySelector(".nav");
+const navList = document.querySelector("#navList");
+const navTrigger = document.querySelector(".navTrigger");
+const gitHubImage = document.querySelector(".fa-github");
+
+// Navbar Button
+const handleTrigger =() => {
+   navTrigger.classList.toggle("active");
+   navList.classList.toggle("show_list");
+   navList.classList.toggle("media-button");
+}
+navTrigger.addEventListener("click",handleTrigger)
+
+// Navbar Change
+const handleScroll = () => {
+   nav.classList.toggle("affix", this.scrollY>0);
+   if(this.scrollY>0) {
+   gitHubImage.style.color = "white";
+   } else {
+      gitHubImage.style.color = "black";
+   }
+}
+
+this.addEventListener("scroll",handleScroll)
+
 // PROJECTS 
 
 // Constants

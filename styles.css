@@ -6,8 +6,6 @@
 
 body {
   font-family: 'Montserrat', sans-serif;
-  font-size: 62.5%;
-  font-size: 10px;
 }
 
 /* NAVBAR */
@@ -34,7 +32,7 @@ body {
 }
 
 .nav div.logo a:hover {
-  color: black;
+  text-shadow: 1px 1px 2px #26a1a1;
 }
 
 .nav div.nav-list {
@@ -60,13 +58,15 @@ body {
 
 .nav div.nav-list ul li a {
   text-decoration: none;
-  color: #fff;
+  color: black;
+  text-shadow: 1px 1px 2px #26a1a1;
   line-height: 65px;
   font-size: 2.4rem;
 }
 
 .nav div.nav-list ul li a:hover {
   color: black;
+  text-shadow: 2px 2px 2px #26a1a1;
 }
 
 .navTrigger {
@@ -113,18 +113,22 @@ body {
   }
   .nav div.nav-list ul li {
     width: 100%;
-    text-align: right;
+    text-align: center;
+    padding: 50px;
   }
   .nav div.nav-list ul li a {
     text-align: center;
     width: 100%;
-    font-size: 3rem;
+    font-size: 4rem;
     padding: 20px;
+    text-shadow: 1px 1px 2px #26a1a1;
   }
-  .nav div.media_button {
+  .nav div.media-button {
     display: block;
+    height: 100%;
   }
 }
+
 .navTrigger {
   cursor: pointer;
   width: 30px;
@@ -371,7 +375,7 @@ body {
   border-radius: 2rem;
   padding: 10px;
   margin-top: 10px;
-  text-shadow: 2px 2px #26a1a1;
+  text-shadow: 1px 1px #26a1a1;
 }
 
 .web-dev {
@@ -417,7 +421,7 @@ body {
 
 /* GLASS RIGHT */
 .right-about {
-  flex: 7;
+  flex: 3;
 }
 
 .about-area {
@@ -766,7 +770,7 @@ body {
 }
 
 .contact-field label {
-  margin-left: 35%;
+  margin-left: 33%;
   font-size: 1.2rem;
   text-shadow: 1px 1px #26a1a1;
 }
@@ -778,6 +782,7 @@ body {
   margin: 10px 0;
   width: 100%;
   text-align: center;
+  font-size: 1.5rem;
 }
 
 .contact-message textarea {
@@ -786,6 +791,7 @@ body {
   width: 100%;
   border-radius: 20px;
   margin-top: 20px;
+  font-size: 1.2rem;
 }
 
 ul {
@@ -813,16 +819,16 @@ ul {
 }
 
 /* GITHUB IMAGE */
-
 .fab {
   color: black;
 }
+
 .fab:hover {
-  color: white;
+  text-shadow: 1px 1px 2px #26a1a1;
 }
 
 .logo-text {
-  margin-top: -40px;
+  margin-top: -55px;
   text-shadow: 1px 1px #26a1a1;
   pointer-events: none;
 }
