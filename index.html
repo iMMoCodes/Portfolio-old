@@ -10,6 +10,9 @@
    <!-- GOOGLE FONTS -->
    <link rel="preconnect" href="https://fonts.gstatic.com">
    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap" rel="stylesheet">
+   <!-- FONT AWESOME -->
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+      integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
    <!-- STYLING -->
    <link rel="stylesheet" href="styles.css"/>
 </head>
@@ -18,7 +21,8 @@
    <nav class="nav">
       <div class="container">
          <div class="logo">
-            <a href="#">Your Logo</a>
+            <a target="_blank" href="https://github.com/iMMoCodes"><i class="fab fa-github"></i></a>
+            <h1 class="logo-text">My Github</h1>
          </div>
          <div id="navList" class="nav-list">
             <ul class="navlinks">
@@ -83,12 +87,18 @@
                      <p class="about-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur sit hic nisi necessitatibus ratione debitis laboriosam impedit. Repudiandae, tempora obcaecati.</p>
                   </div>
                </div>
+               <h1 class="training-title">Currently Studying</h1>
                <!-- CURRENT STUDYING LANGUAGE -->
                <div class="currently-training">
-               <h1 class="training-title">Currently Studying</h1>
+               <!-- SINGLE STUDYING LANGUAGE -->
                   <div class="current-study">
-                     <img class="language-img" src="./assets/React.svg" alt="React"/>
                      <h1 class="study-text">REACT</h1>
+                     <img class="language-img" src="./assets/React.svg" alt="React"/>
+                  </div>
+                  <!-- SINGLE STUDYING LANGUAGE -->
+                  <div class="current-study">
+                     <img class="language-img" src="./assets/NODEJS.svg" alt="React" />
+                     
                   </div>
                </div>
             </div>
@@ -157,15 +167,17 @@
                   <div class="contact-fields">
                      <!-- CONTACT NAME -->
                      <div class="contact-field">
-                        <input type="text" name="name" id="name" placeholder="Name..." />
+                        <label class="contact-label">Your Name</label>
+                        <input type="text" name="name" id="name" />
                      </div>
                      <!-- CONTACT EMAIL -->
                      <div class="contact-field">
-                        <input type="email" name="email" id="email" placeholder="Email..." />
+                        <label class="contact-label contact-email">Your Email</label>
+                        <input type="email" name="email" id="email" />
                      </div>
                      <!-- CONTACT MESSAGE -->
                      <div class="contact-message">
-                        <textarea name="message" id="message" placeholder="Message..." rows="7"></textarea>
+                        <textarea name="message" id="message" placeholder="Type your message here" rows="7"></textarea>
                      </div>
                      <!-- RECAPTCHA -->
                      <div data-netlify-recaptcha="true"></div>
