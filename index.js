@@ -5,6 +5,8 @@ const nav = document.querySelector(".nav");
 const navList = document.querySelector("#navList");
 const navTrigger = document.querySelector(".navTrigger");
 const gitHubImage = document.querySelector(".fa-github");
+const navLogoText = document.querySelector(".logo-text");
+const mediaButton = document.querySelectorAll("#nav-line");
 
 // Navbar Button
 const handleTrigger =() => {
@@ -19,8 +21,16 @@ const handleScroll = () => {
    nav.classList.toggle("affix", this.scrollY>0);
    if(this.scrollY>0) {
    gitHubImage.style.color = "white";
-   } else {
-      gitHubImage.style.color = "black";
+   navLogoText.style.textShadow = "1px 1px 2px #26a1a1";
+   mediaButton.forEach(item => {
+   item.style.backgroundColor = "white";
+   })
+} else {
+   gitHubImage.style.color = "black";
+   navLogoText.style.textShadow = "1px 1px 2px black";
+   mediaButton.forEach(item => {
+   item.style.backgroundColor = "black";
+   })
    }
 }
 

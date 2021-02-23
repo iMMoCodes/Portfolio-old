@@ -107,7 +107,7 @@ body {
     right: 0;
     left: 0;
     bottom: 0;
-    background-color: #111;
+    background-color: rgba(17, 17, 17, 0.9);
     /*same background color of navbar*/
     background-position: center top;
   }
@@ -141,7 +141,7 @@ body {
 }
 
 .navTrigger i {
-  background-color: #fff;
+  background-color: black;
   border-radius: 2px;
   content: '';
   display: block;
@@ -320,7 +320,7 @@ body {
 
 .affix {
   padding: 0;
-  background-color: #111;
+  background-color: rgba(17, 17, 17, 0.9);
 }
 
 /* END OF NAVBAR */
@@ -372,10 +372,10 @@ body {
     rgba(101, 223, 201, 0.3) 0%,
     rgba(108, 219, 235, 0.8) 100%
   );
-  border-radius: 2rem;
-  padding: 10px;
-  margin-top: 10px;
-  text-shadow: 1px 1px #26a1a1;
+  border-radius: 999px;
+  padding: 5px;
+  margin: 10px 0;
+  text-shadow: 1px 1px 2px #26a1a1;
 }
 
 .web-dev {
@@ -386,8 +386,8 @@ body {
     rgba(101, 223, 201, 0.3) 0%,
     rgba(108, 219, 235, 0.8) 100%
   );
-  border-radius: 2rem;
-  text-shadow: 1px 1px #26a1a1;
+  border-radius: 999px;
+  text-shadow: 1px 1px 2px #26a1a1;
 }
 
 .languages {
@@ -403,6 +403,7 @@ body {
 }
 
 .language-img {
+  margin: 10px 0;
   padding: 10px;
   max-height: 100px;
 }
@@ -415,8 +416,9 @@ body {
     rgba(101, 223, 201, 0.3) 0%,
     rgba(108, 219, 235, 0.8) 100%
   );
-  border-radius: 2rem;
-  text-shadow: 1px 1px #26a1a1;
+  border-radius: 999px;
+  text-shadow: 1px 1px 2px #26a1a1;
+  margin: 10px 0;
 }
 
 /* GLASS RIGHT */
@@ -438,15 +440,16 @@ body {
     rgba(101, 223, 201, 0.3) 0%,
     rgba(108, 219, 235, 0.8) 100%
   );
-  border-radius: 2rem;
-  padding: 0.3rem;
+  border-radius: 999px;
+  /* padding: 0.3rem; */
   margin-top: 30px;
 }
 
 .about-text {
   text-align: center;
   font-size: 1.4rem;
-  text-shadow: 1px 1px #26a1a1;
+  padding: 20px;
+  text-shadow: 1px 1px 2px #26a1a1;
 }
 
 .about-title {
@@ -459,8 +462,8 @@ body {
     rgba(101, 223, 201, 0.3) 0%,
     rgba(108, 219, 235, 0.8) 100%
   );
-  border-radius: 2rem;
-  text-shadow: 2px 2px #26a1a1;
+  border-radius: 999px;
+  text-shadow: 2px 2px 2px #26a1a1;
 }
 
 .currently-training {
@@ -479,9 +482,9 @@ body {
     rgba(101, 223, 201, 0.3) 0%,
     rgba(108, 219, 235, 0.8) 100%
   );
-  border-radius: 2rem;
-  text-shadow: 1px 1px #26a1a1;
-  margin-top: 10px;
+  border-radius: 999px;
+  text-shadow: 1px 1px 2px #26a1a1;
+  margin-top: 20px;
   padding: 10px;
 }
 
@@ -489,9 +492,9 @@ body {
   text-align: center;
   margin-top: 10px;
   margin-bottom: -20px;
-  text-shadow: 1px 1px #26a1a1;
+  text-shadow: 1px 1px 2px #26a1a1;
 }
-/* MEDIA QUERY FOR TEXT SIZE */
+/* MEDIA QUERY */
 @media screen and (max-width: 912px) {
   .language-img {
     max-height: 60px;
@@ -513,6 +516,9 @@ body {
   }
   .contact-title {
     font-size: 1rem;
+  }
+  .study-text {
+    font-size: 12px;
   }
 }
 /* BUBBLES */
@@ -610,10 +616,15 @@ body {
     rgba(101, 223, 201, 0.3) 0%,
     rgba(108, 219, 235, 0.8) 100%
   );
-  border-radius: 2rem;
+  border-radius: 999px;
   padding: 10px;
   font-size: 2rem;
-  text-shadow: 1px 1px #26a1a1;
+  margin-top: 10px;
+  text-shadow: 1px 1px 2px #26a1a1;
+}
+
+.project-picture {
+  margin: 10px 0;
 }
 
 .project-stack {
@@ -627,8 +638,14 @@ body {
   justify-content: center;
   align-items: center;
   width: 70px;
-  background: #26a1a1;
-  border-radius: 35px;
+  background: radial-gradient(
+    circle,
+    rgba(101, 223, 201, 0.3) 0%,
+    rgba(108, 219, 235, 0.8) 100%
+  );
+  border-radius: 999px;
+  margin: 10px 0;
+  padding: 10px;
 }
 
 .project-stack-img {
@@ -643,11 +660,12 @@ body {
     rgba(101, 223, 201, 0.3) 0%,
     rgba(108, 219, 235, 0.8) 100%
   );
-  border-radius: 2rem;
+  border-radius: 999px;
+  margin: 10px 15%;
+  padding: 10px;
 }
 
 .project-description {
-  margin-top: 10px;
   text-align: center;
   font-size: 1rem;
   background: radial-gradient(
@@ -655,21 +673,24 @@ body {
     rgba(101, 223, 201, 0.3) 0%,
     rgba(108, 219, 235, 0.8) 100%
   );
-  border-radius: 2rem;
+  border-radius: 999px;
+  margin: 10px 5%;
+  padding: 10px;
 }
 
 .projects-choice {
   display: flex;
-  justify-content: space-around;
-  margin-top: 10px;
+  justify-content: space-between;
+  margin: 0 10%;
 }
 
 .project-choice,
 .code-button {
-  height: 50px;
+  height: 100px;
   width: 100px;
   font-size: 1.2rem;
-  border-radius: 50px;
+  border-radius: 100px;
+  padding: 10px;
   border: none;
   outline: none;
   cursor: pointer;
@@ -763,16 +784,16 @@ body {
     rgba(101, 223, 201, 0.3) 0%,
     rgba(108, 219, 235, 0.8) 100%
   );
-  border-radius: 2rem;
-  padding: 10px;
+  border-radius: 999px;
+  padding: 1rem;
   font-size: 2rem;
-  text-shadow: 1px 1px #26a1a1;
+  text-shadow: 1px 1px 2px #26a1a1;
 }
 
 .contact-field label {
-  margin-left: 33%;
+  margin-left: 35%;
   font-size: 1.2rem;
-  text-shadow: 1px 1px #26a1a1;
+  text-shadow: 1px 1px 2px #26a1a1;
 }
 
 .contact-field input {
@@ -780,9 +801,10 @@ body {
   padding: 1rem;
   border-radius: 50px;
   margin: 10px 0;
-  width: 100%;
   text-align: center;
+  width: 100%;
   font-size: 1.5rem;
+  border: 2px solid #26a1a1;
 }
 
 .contact-message textarea {
@@ -792,6 +814,7 @@ body {
   border-radius: 20px;
   margin-top: 20px;
   font-size: 1.2rem;
+  border: 2px solid #26a1a1;
 }
 
 ul {
@@ -802,20 +825,23 @@ ul {
 }
 
 .submit-btn {
-  background: #26a1a1;
+  background: radial-gradient(
+    circle,
+    rgba(101, 223, 201, 0.3) 0%,
+    rgba(108, 219, 235, 0.8) 100%
+  );
   outline: none;
-  border: 1px solid black;
+  border: 2px solid #26a1a1;
   border-radius: 999px;
-  font-size: 2rem;
+  font-size: 3rem;
   padding: 1rem;
   margin-top: 20px;
   cursor: pointer;
   text-shadow: 1px 1px 2px #26a1a1;
 }
 .submit-btn:hover {
-  background: rgba(38, 161, 161, 0.7);
-  border: 2px solid black;
-  text-shadow: 1px 1px 2 #26a1a1;
+  transform: scale(1.2);
+  text-shadow: 1px 1px 2px #26a1a1;
 }
 
 /* GITHUB IMAGE */
@@ -829,6 +855,16 @@ ul {
 
 .logo-text {
   margin-top: -55px;
-  text-shadow: 1px 1px #26a1a1;
+  text-shadow: 1px 1px 2px black;
   pointer-events: none;
+}
+
+/* MEDIA QUERY */
+@media screen and (max-width: 912px) {
+  .glass,
+  .projects-container,
+  .contact-container {
+    margin-top: 10px;
+    width: 90vw;
+  }
 }
